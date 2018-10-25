@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        ul{
+            list-style:none;
+        }
+        div>div>p{
+            text-align: center
+        }
+        div>p.top{
+            font-size:24px;
+            font-weight: bold;
+            width:110px;
+            border-bottom:2px solid red;
+            margin:0 auto;
+            padding:20px 0;
+        }
+        div>div.index-nav{
+            width:1140px;
+            margin:0 auto;
+        }
+        div>div.index-nav>ul>li{
+            width:350px;
+            height:400px;
+            float:left;
+        }
+        div>div.index-one>ul>li{
+            float:left;
+        }
+        div>div>p.nav{
+            padding:10px 0 25px;
+            font-size:18px;
+        }
+        div>div.index-one{
+            width:600px;
+            margin:0 auto;
+        }
+        div>div.index-one>ul>li{
+            padding:10px 30px 10px 40px;
+        }
+        .my_hover.hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p class="top">解决方案</p>
+            <p class="nav">定义目的地信息化行业标准 启迪中国旅游智慧前行</p> 
+        </div>  
+        <div class="index-nav">
+            <ul>
+                <li><a href="#" class="nav-one">
+                    <div class="div">
+                        <div>
+                            <img src="img/index/12273141_img1.png" class="img">
+                        </div>
+                        <div class="img index2 my_hover">
+                            <img src="img/index/12273142_img1_ac.png">
+                        </div>
+                    </div>
+                    </a></li>
+                <li><a href="#" class="nav-two">
+                    <div class="div">
+                        <div>
+                            <img src="img/index/12273169_img2.png" class="img">
+                        </div>
+                        <div class="img index2 my_hover">
+                            <img src="img/index/12273991_img2_ac.png">
+                        </div>
+                    </div>
+                    </a></li>
+                <li><a href="#" class="nav-three">
+                    <div class="div">
+                        <div>
+                            <img src="img/index/12273171_img3.png" class="img">
+                        </div>
+                        <div class="img index2 my_hover">
+                            <img src="img/index/12273992_img3_ac.png">
+                        </div>
+                    </div>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p class="top">经典案例</p>
+            <p class="nav">4000+智慧旅游综合项目案例 涵盖国内半数以上5A、4A景区</p> 
+        </div>
+        <div class="index-one">
+            <ul>
+                <li><a href="#" class="nav-one">
+                    <div class="div">
+                        <div>
+                            <img src="img/index/12261940_1.png" class="img">
+                        </div>
+                        <div class="img index2 my_hover">
+                            <img src="img/index/12261941_1-ac.png">
+                        </div>
+                    </div>
+                    </a><p align="center" class="what">智慧景区</p></li>
+               <li><a href="#" class="nav-two">
+                    <div class="div">
+                        <div>
+                            <img src="img/index/12261942_2.png" class="img">
+                        </div>
+                        <div class="img index2 my_hover">
+                            <img src="img/index/12261943_2-ac.png">
+                        </div>
+                    </div>
+                    </a><p align="center" class="what">智慧场馆</p></li>
+                <li><a href="#" class="nav-three">
+                    <div class="div">
+                        <div>
+                            <img src="img/index/12261944_3.png" class="img">
+                        </div>
+                        <div class="img index2 my_hover">
+                            <img src="img/index/12261945_3-ac.png">
+                        </div>
+                    </div>
+                    </a><p align="center" class="what">智慧交通</p></li>
+            </ul>
+        </div>
+    </div>    
+    <style>
+        .div{position: relative;}
+        .img{position: absolute;}
+        .what{margin-top:120px;margin-left:20px;}
+        .index2{ opacity: 0;}
+    </style>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(".my_hover").hover(function(){
+				$(this).toggleClass("hover")
+			})
+    </script>
+</body>
+</html>

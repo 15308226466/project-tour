@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #my_hover.hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="img1 img">
+            <img src="img/index/12261940_1.png">
+        </div>
+        <div class="img2 img" id="my_hover">
+            <img src="img/index/12261941_1-ac.png">
+        </div>
+    </div>
+        <style>
+        .div{position:relative;}
+        .img{position:absolute;
+         /* top: 10px;
+         left: 10px; */
+        }
+        .img2{ opacity: 0;}
+        /* .img2:hover{opacity: 1;} */
+        </style>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script>
+			$("#my_hover").hover(function(){
+				$(this).toggleClass("hover")
+			}
+		)
+		</script>
+</body>
+</html>
