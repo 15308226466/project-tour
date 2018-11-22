@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cs.css">
+</head>
+<body>
+    <div class="banner">
+      <div class="carousel">
+        <!-- banner图片 -->
+        <div class="carousel_inner">
+          <div class="carousel_item" :style=`transform:translateX(${left}px);transition-duration:${t}ms;`>
+              <a href="#"  class="aa" v-for="item in list"  >
+                    <img :src="item.img">
+              </a>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/cs.js"></script>
+</body>
+</html>
